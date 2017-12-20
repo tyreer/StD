@@ -36,7 +36,7 @@ justify-content: center;
   align-items: center;
   transform: rotate(-3deg);
   font-size: 24px;
-  animation-delay: 10s;
+  animation-delay: 12s;
   animation-duration: 0.2s;
   animation-name: fillin;
   animation-fill-mode: forwards;
@@ -45,7 +45,7 @@ justify-content: center;
 .overlay h1,
 .overlay h2 {
   margin: 0;
-  animation-delay: 10s;
+  animation-delay: 12s;
   animation-duration: 0.2s;
   animation-name: fillinTextSmall;
   animation-fill-mode: forwards;
@@ -90,7 +90,7 @@ justify-content: center;
 } */
 
 .svg {
-  animation-duration: 10s;
+  animation-duration: 12s;
   animation-name: slidein;
   /* animation-iteration-count: 3;
   animation-direction: alternate; */
@@ -98,7 +98,7 @@ justify-content: center;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  animation-timing-function: linear;
+  animation-timing-function: ease-in;
   /* left: 0;
 right: 0;
 margin: auto; */
@@ -107,13 +107,11 @@ margin: auto; */
 
 @keyframes slidein {
   from {
-      width: 800%;
       height: 800%;
   }
 
   to {
-    width: 38%;
-    height: 38%;
+    height: 71%;
   }
 }
 /* @keyframes slidein {
