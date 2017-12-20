@@ -6,6 +6,9 @@
 body {
   width: 100vw;
 font-family: 'Julius Sans One', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 
@@ -58,7 +61,7 @@ font-family: 'Julius Sans One', sans-serif;
   .overlay h2 {
     animation-name: fillinTextLarge;
   }
-  
+
   .bg-4 {
     background: no-repeat center url('./img/4.svg');
   }
@@ -74,11 +77,9 @@ font-family: 'Julius Sans One', sans-serif;
   animation-direction: alternate;
 } */
 
-.bg-4 {
+/* .bg-4 {
   animation-duration: 10s;
   animation-name: slidein;
-  /* animation-iteration-count: 3;
-  animation-direction: alternate; */
   animation-fill-mode: forwards;
   background: no-repeat center url('./img/3.jpg');
   position: fixed;
@@ -86,10 +87,36 @@ font-family: 'Julius Sans One', sans-serif;
   top: 0;
   height:100vh;
   animation-timing-function: linear;
+} */
+
+.svg {
+  animation-duration: 10s;
+  animation-name: slidein;
+  /* animation-iteration-count: 3;
+  animation-direction: alternate; */
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  animation-timing-function: linear;
+  /* left: 0;
+right: 0;
+margin: auto; */
 }
 
 
 @keyframes slidein {
+  from {
+      width: 800%;
+      height: 800%;
+  }
+
+  to {
+    width: 38%;
+    height: 38%;
+  }
+}
+/* @keyframes slidein {
   from {
     background-size: 800% 800%;
   }
@@ -97,7 +124,7 @@ font-family: 'Julius Sans One', sans-serif;
   to {
     background-size: 38% 38%;
   }
-}
+} */
 
 @keyframes fillin {
   from {
