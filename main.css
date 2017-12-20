@@ -58,6 +58,10 @@ font-family: 'Julius Sans One', sans-serif;
   .overlay h2 {
     animation-name: fillinTextLarge;
   }
+  
+  .bg-4 {
+    background: no-repeat center url('./img/4.svg');
+  }
 }
 
 
@@ -76,7 +80,7 @@ font-family: 'Julius Sans One', sans-serif;
   /* animation-iteration-count: 3;
   animation-direction: alternate; */
   animation-fill-mode: forwards;
-  background: no-repeat center url('./img/4.svg');
+  background: no-repeat center url('./img/3.jpg');
   position: fixed;
   width: 100vw;
   top: 0;
