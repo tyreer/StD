@@ -37,6 +37,7 @@ body {
   animation-fill-mode: forwards;
   position: fixed;
   height: 4000px;
+  width: 4000px;
 }
 
 @keyframes slidein {
@@ -93,5 +94,35 @@ body {
   .overlay h1,
   .overlay h2 {
     animation-name: fillinTextLarge;
+  }
+}
+
+
+/* .svg {
+  animation: 12s ease-in 5s slidein;
+  animation-fill-mode: forwards;
+  position: fixed;
+  height: 8000px;
+  width: 8000px;
+} */
+
+
+.tree-outline {
+  stroke:#000000;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: dash 15s linear 12s infinite alternate;
+  fill: transparent;
+}
+
+@keyframes dash {
+  99% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+
+  100% {
+    /* fill: black; */
+    stroke-dashoffset: 0;
   }
 }
