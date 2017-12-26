@@ -1,91 +1,106 @@
+:root {
+  --animation-duration: 12s;
+}
+
 body {
   align-items: center;
   display: flex;
   font-family: 'Julius Sans One', sans-serif;
-  height: 100vh;
+  height: 85vh;
   justify-content: center;
   overflow: hidden;
   width: 100vw;
-}
-
-.overlay {
-  align-items: center;
-  animation: 0.2s linear 12s fillin;
-  animation-fill-mode: forwards;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  height: 100vh;
-  justify-content: center;
-  position: fixed;
-  text-align: center;
-  top: 0;
-  transform: rotate(-3deg);
-  width: 100%;
-}
-
-.overlay h1,
-.overlay h2 {
   margin: 0;
-  animation: 0.2s linear 12s fillinTextSmall;
-  animation-fill-mode: forwards;
 }
 
 .svg {
-  animation: 12s ease-in 0s slidein;
+  animation: var(--animation-duration) ease-in 0s slidein;
   animation-fill-mode: forwards;
   position: fixed;
   height: 4000px;
   width: 4000px;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0,0,0);
 }
+
 
 @keyframes slidein {
   from {
-      transform: scale(1);
+    transform: scale(1);
   }
-
   to {
     transform: scale(0.15);
   }
 }
 
+.tree-outline {
+  stroke:#000000;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: dash 15s linear var(--animation-duration) infinite alternate;
+  fill: transparent;
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.overlay {
+  align-items: center;
+  animation: 0.2s linear var(--animation-duration) fillin;
+  animation-fill-mode: forwards;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: center;
+  position: fixed;
+  text-align: center;
+  transform: rotate(-3deg);
+  padding: 0 20px;
+}
 
 @keyframes fillin {
-  from {
-    color: white;
-    transform: rotate(-3deg);
-  }
-
   to {
     color: black;
     transform: rotate(-4deg);
   }
 }
 
-@keyframes fillinTextSmall {
-  from {
-    background: transparent
-  }
-
-  to {
-    background: palegreen;
-    text-shadow: 4px 131px 57px #000;
-  }
+.overlay h1 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
 }
 
-@keyframes fillinTextLarge {
-  from {
-    background: transparent
-  }
+.overlay h2:first-of-type {
+  padding-top: 5px;
+}
 
+.overlay h1,
+.overlay h2 {
+  margin: 0;
+  animation: 0.2s linear var(--animation-duration) fillinText;
+  animation-fill-mode: forwards;
+  background: transparent;
+  opacity: 0;
+  padding: 3px 10px;
+}
+
+@keyframes fillinText {
   to {
     background: palegreen;
-    text-shadow: 55px 70px 40px #000;
-  }
+    opacity: 1;
+ }
 }
 
 @media (min-width: 600px) {
+
+  body {
+    height: 100vh;
+  }
 
   .overlay {
     font-size: 27px;
@@ -93,36 +108,7 @@ body {
 
   .overlay h1,
   .overlay h2 {
-    animation-name: fillinTextLarge;
-  }
-}
-
-
-/* .svg {
-  animation: 12s ease-in 5s slidein;
-  animation-fill-mode: forwards;
-  position: fixed;
-  height: 8000px;
-  width: 8000px;
-} */
-
-
-.tree-outline {
-  stroke:#000000;
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  animation: dash 15s linear 12s infinite alternate;
-  fill: transparent;
-}
-
-@keyframes dash {
-  99% {
-    stroke-dashoffset: 0;
-    fill: transparent;
-  }
-
-  100% {
-    /* fill: black; */
-    stroke-dashoffset: 0;
+   opacity: 1;
+   padding: 0;
   }
 }
