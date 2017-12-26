@@ -89,6 +89,10 @@ body {
   padding: 3px 10px;
 }
 
+.overlay h2 {
+  font-size: 20px;
+}
+
 @keyframes fillinText {
   to {
     background: palegreen;
@@ -112,6 +116,10 @@ body {
    opacity: 1;
    padding: 0;
    animation: 0.2s linear var(--animation-duration) fillinText;
+  }
+
+  .overlay h2 {
+    font-size: 27px;
   }
 
   @keyframes slidein {
