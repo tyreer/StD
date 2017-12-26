@@ -50,7 +50,7 @@ body {
 
 .overlay {
   align-items: center;
-  animation: 0.2s linear var(--animation-duration) fillin;
+  animation: 0.05s linear var(--animation-duration) fillin;
   animation-fill-mode: forwards;
   color: white;
   display: flex;
@@ -82,7 +82,7 @@ body {
 .overlay h1,
 .overlay h2 {
   margin: 0;
-  animation: 0.2s linear var(--animation-duration) fillinText;
+  animation: 0.05s linear var(--animation-duration) fillinText;
   animation-fill-mode: forwards;
   background: transparent;
   opacity: 0;
@@ -104,12 +104,14 @@ body {
 
   .overlay {
     font-size: 27px;
+    animation: 0.2s linear var(--animation-duration) fillin;
   }
 
   .overlay h1,
   .overlay h2 {
    opacity: 1;
    padding: 0;
+   animation: 0.2s linear var(--animation-duration) fillinText;
   }
 
   @keyframes slidein {
