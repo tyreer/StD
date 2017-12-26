@@ -30,7 +30,7 @@ body {
     transform: scale(1);
   }
   to {
-    transform: scale(0.15);
+    transform: scale(0.13);
   }
 }
 
@@ -110,5 +110,14 @@ body {
   .overlay h2 {
    opacity: 1;
    padding: 0;
+  }
+
+  @keyframes slidein {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.15);
+    }
   }
 }
