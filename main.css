@@ -50,7 +50,7 @@ body {
 
 .overlay {
   align-items: center;
-  animation: 0.01s linear 13s fillin;
+  animation: 0.01s linear var(--animation-duration) fillin;
   animation-fill-mode: forwards;
   color: white;
   display: flex;
@@ -82,7 +82,7 @@ body {
 .overlay h1,
 .overlay h2 {
   margin: 0;
-  animation: 0.01s linear 13s fillinText;
+  animation: 0.01s linear var(--animation-duration) fillinText;
   animation-fill-mode: forwards;
   background: transparent;
   opacity: 0;
