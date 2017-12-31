@@ -27,24 +27,19 @@ body {
   position: absolute;
   height: 500px;
   width: 500px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-perspective: 1000;
-          perspective: 1000;
-  -webkit-transform: translate3d(0,0,0);
-          transform: translate3d(0,0,0);
+  /* backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0,0,0); */
 }
-
-
 
 @-webkit-keyframes slidein {
   from {
-    -webkit-transform: translate(250px, 250px)
+    -webkit-transform: translate(750px, 750px)
                scale(3)
-               translate(-250px, -250px);
-            transform: translate(250px, 250px)
+               translate(-750px, -750px);
+            transform: translate(750px, 750px)
                scale(3)
-               translate(-250px, -250px)
+               translate(-750px, -750px)
     /* transform: scale(3); */
   }
   to {
@@ -58,16 +53,14 @@ body {
   }
 }
 
-
-
 @keyframes slidein {
   from {
-    -webkit-transform: translate(250px, 250px)
+    -webkit-transform: translate(750px, 750px)
                scale(3)
-               translate(-250px, -250px);
-            transform: translate(250px, 250px)
+               translate(-750px, -750px);
+            transform: translate(750px, 750px)
                scale(3)
-               translate(-250px, -250px)
+               translate(-750px, -750px)
     /* transform: scale(3); */
   }
   to {
