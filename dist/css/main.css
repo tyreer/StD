@@ -24,7 +24,7 @@ body {
           animation: var(--animation-duration) ease-in 0s slidein;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  position: fixed;
+  position: absolute;
   height: 4000px;
   width: 4000px;
   -webkit-backface-visibility: hidden;

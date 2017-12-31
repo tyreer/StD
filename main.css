@@ -16,7 +16,7 @@ body {
 .svg {
   animation: var(--animation-duration) ease-in 0s slidein;
   animation-fill-mode: forwards;
-  position: fixed;
+  position: absolute;
   height: 4000px;
   width: 4000px;
   backface-visibility: hidden;
