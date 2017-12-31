@@ -36,26 +36,48 @@ body {
 }
 
 
+
 @-webkit-keyframes slidein {
   from {
-    -webkit-transform: scale(3);
-            transform: scale(3);
+    -webkit-transform: translate(250px, 250px)
+               scale(3)
+               translate(-250px, -250px);
+            transform: translate(250px, 250px)
+               scale(3)
+               translate(-250px, -250px)
+    /* transform: scale(3); */
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translate(250px, 250px)
+               scale(1)
+               translate(-250px, -250px);
+            transform: translate(250px, 250px)
+               scale(1)
+               translate(-250px, -250px)
+    /* transform: scale(1); */
   }
 }
 
 
+
 @keyframes slidein {
   from {
-    -webkit-transform: scale(3);
-            transform: scale(3);
+    -webkit-transform: translate(250px, 250px)
+               scale(3)
+               translate(-250px, -250px);
+            transform: translate(250px, 250px)
+               scale(3)
+               translate(-250px, -250px)
+    /* transform: scale(3); */
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translate(250px, 250px)
+               scale(1)
+               translate(-250px, -250px);
+            transform: translate(250px, 250px)
+               scale(1)
+               translate(-250px, -250px)
+    /* transform: scale(1); */
   }
 }
 

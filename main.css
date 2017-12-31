@@ -24,13 +24,18 @@ body {
   transform: translate3d(0,0,0);
 }
 
-
 @keyframes slidein {
   from {
-    transform: scale(3);
+    transform: translate(250px, 250px)
+               scale(3)
+               translate(-250px, -250px)
+    /* transform: scale(3); */
   }
   to {
-    transform: scale(1);
+    transform: translate(250px, 250px)
+               scale(1)
+               translate(-250px, -250px)
+    /* transform: scale(1); */
   }
 }
 
