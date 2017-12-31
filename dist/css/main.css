@@ -17,7 +17,6 @@ body {
   overflow: hidden;
   width: 100vw;
   margin: 0;
-  position: relative;
 }
 
 .svg {
@@ -169,6 +168,11 @@ body {
     height: 100vh;
   }
 
+  .svg {
+    height: 4000px;
+    width: 4000px;
+  }
+
   .tree-outline {
     -webkit-animation: dash 15s linear var(--animation-duration) infinite alternate;
             animation: dash 15s linear var(--animation-duration) infinite alternate;
@@ -206,23 +210,23 @@ body {
 
   @-webkit-keyframes slidein {
     from {
-      -webkit-transform: scale(3);
-              transform: scale(3);
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
     to {
-      -webkit-transform: scale(0.55);
-              transform: scale(0.55);
+      -webkit-transform: scale(0.13);
+              transform: scale(0.13);
     }
   }
 
   @keyframes slidein {
     from {
-      -webkit-transform: scale(3);
-              transform: scale(3);
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
     to {
-      -webkit-transform: scale(0.55);
-              transform: scale(0.55);
+      -webkit-transform: scale(0.13);
+              transform: scale(0.13);
     }
   }
 }
