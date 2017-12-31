@@ -7,11 +7,11 @@ gulp.task('autoprefixer', function () {
     const sourcemaps   = require('gulp-sourcemaps');
     const autoprefixer = require('autoprefixer');
 
-    return gulp.src('./src/*.css')
+    return gulp.src('./*.css')
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer() ]))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./dest'));
+        .pipe(gulp.dest('./dist/css/'))
 });
 
 gulp.task('default', ['autoprefixer']);

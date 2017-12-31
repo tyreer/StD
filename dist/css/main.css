@@ -1,0 +1,229 @@
+:root {
+  --animation-duration: 12s;
+}
+
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Julius Sans One', sans-serif;
+  height: 85vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+  margin: 0;
+}
+
+.svg {
+  -webkit-animation: var(--animation-duration) ease-in 0s slidein;
+          animation: var(--animation-duration) ease-in 0s slidein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: fixed;
+  height: 4000px;
+  width: 4000px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+}
+
+
+@-webkit-keyframes slidein {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.13);
+            transform: scale(0.13);
+  }
+}
+
+
+@keyframes slidein {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.13);
+            transform: scale(0.13);
+  }
+}
+
+.tree-outline {
+  stroke:#000000;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  -webkit-animation: dash 15s linear 13s infinite alternate;
+          animation: dash 15s linear 13s infinite alternate;
+  fill: transparent;
+}
+
+@-webkit-keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.overlay {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: 0.01s linear var(--animation-duration) fillin;
+          animation: 0.01s linear var(--animation-duration) fillin;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  text-align: center;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  padding: 0 20px;
+}
+
+@-webkit-keyframes fillin {
+  to {
+    color: black;
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+}
+
+@keyframes fillin {
+  to {
+    color: black;
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+}
+
+.overlay h1 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+}
+
+.overlay h2:first-of-type {
+  padding-top: 5px;
+}
+
+.overlay h1,
+.overlay h2 {
+  margin: 0;
+  -webkit-animation: 0.01s linear var(--animation-duration) fillinText;
+          animation: 0.01s linear var(--animation-duration) fillinText;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background: transparent;
+  opacity: 0;
+  padding: 3px 10px;
+}
+
+.overlay h2 {
+  font-size: 20px;
+}
+
+@-webkit-keyframes fillinText {
+  to {
+    background: palegreen;
+    opacity: 1;
+ }
+}
+
+@keyframes fillinText {
+  to {
+    background: palegreen;
+    opacity: 1;
+ }
+}
+
+@media (min-width: 600px) {
+
+  body {
+    height: 100vh;
+  }
+
+  .tree-outline {
+    -webkit-animation: dash 15s linear var(--animation-duration) infinite alternate;
+            animation: dash 15s linear var(--animation-duration) infinite alternate;
+  }
+
+  .overlay {
+    font-size: 27px;
+    -webkit-animation: 0.2s linear var(--animation-duration) fillin;
+            animation: 0.2s linear var(--animation-duration) fillin;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+
+  .overlay h1 {
+    border-bottom: 0;
+  }
+
+  .overlay h2:first-of-type {
+    padding-top: 0;
+  }
+
+  .overlay h1,
+  .overlay h2 {
+   opacity: 1;
+   padding: 0;
+   -webkit-animation: 0.2s linear var(--animation-duration) fillinText;
+           animation: 0.2s linear var(--animation-duration) fillinText;
+   -webkit-animation-fill-mode: forwards;
+           animation-fill-mode: forwards;
+  }
+
+  .overlay h2 {
+    font-size: 30px;
+  }
+
+  @-webkit-keyframes slidein {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    to {
+      -webkit-transform: scale(0.15);
+              transform: scale(0.15);
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    to {
+      -webkit-transform: scale(0.15);
+              transform: scale(0.15);
+    }
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
