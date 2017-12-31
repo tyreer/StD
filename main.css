@@ -19,22 +19,22 @@ body {
   position: absolute;
   height: 500px;
   width: 500px;
-  /* backface-visibility: hidden;
+  backface-visibility: hidden;
   perspective: 1000;
-  transform: translate3d(0,0,0); */
+  transform: translate3d(0,0,0);
 }
 
 @keyframes slidein {
   from {
-    transform: translate(750px, 750px)
+    transform: translate(250px, 250px)
                scale(3)
-               translate(-750px, -750px)
+               translate(-250px, -250px)
     /* transform: scale(3); */
   }
   to {
-    transform: translate(250px, 250px)
+    transform: translate(500px, 500px)
                scale(1)
-               translate(-250px, -250px)
+               translate(-500px, -500px)
     /* transform: scale(1); */
   }
 }

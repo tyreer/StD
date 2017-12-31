@@ -27,49 +27,52 @@ body {
   position: absolute;
   height: 500px;
   width: 500px;
-  /* backface-visibility: hidden;
-  perspective: 1000;
-  transform: translate3d(0,0,0); */
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
 }
 
 @-webkit-keyframes slidein {
   from {
-    -webkit-transform: translate(750px, 750px)
+    -webkit-transform: translate(250px, 250px)
                scale(3)
-               translate(-750px, -750px);
-            transform: translate(750px, 750px)
+               translate(-250px, -250px);
+            transform: translate(250px, 250px)
                scale(3)
-               translate(-750px, -750px)
+               translate(-250px, -250px)
     /* transform: scale(3); */
   }
   to {
-    -webkit-transform: translate(250px, 250px)
+    -webkit-transform: translate(500px, 500px)
                scale(1)
-               translate(-250px, -250px);
-            transform: translate(250px, 250px)
+               translate(-500px, -500px);
+            transform: translate(500px, 500px)
                scale(1)
-               translate(-250px, -250px)
+               translate(-500px, -500px)
     /* transform: scale(1); */
   }
 }
 
 @keyframes slidein {
   from {
-    -webkit-transform: translate(750px, 750px)
+    -webkit-transform: translate(250px, 250px)
                scale(3)
-               translate(-750px, -750px);
-            transform: translate(750px, 750px)
+               translate(-250px, -250px);
+            transform: translate(250px, 250px)
                scale(3)
-               translate(-750px, -750px)
+               translate(-250px, -250px)
     /* transform: scale(3); */
   }
   to {
-    -webkit-transform: translate(250px, 250px)
+    -webkit-transform: translate(500px, 500px)
                scale(1)
-               translate(-250px, -250px);
-            transform: translate(250px, 250px)
+               translate(-500px, -500px);
+            transform: translate(500px, 500px)
                scale(1)
-               translate(-250px, -250px)
+               translate(-500px, -500px)
     /* transform: scale(1); */
   }
 }
