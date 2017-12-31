@@ -17,6 +17,7 @@ body {
   overflow: hidden;
   width: 100vw;
   margin: 0;
+  position: relative;
 }
 
 .svg {
@@ -25,8 +26,8 @@ body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   position: absolute;
-  height: 4000px;
-  width: 4000px;
+  height: 2000px;
+  width: 2000px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -38,24 +39,24 @@ body {
 
 @-webkit-keyframes slidein {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
   to {
-    -webkit-transform: scale(0.13);
-            transform: scale(0.13);
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
   }
 }
 
 
 @keyframes slidein {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
   to {
-    -webkit-transform: scale(0.13);
-            transform: scale(0.13);
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
   }
 }
 
@@ -205,23 +206,23 @@ body {
 
   @-webkit-keyframes slidein {
     from {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+      -webkit-transform: scale(2);
+              transform: scale(2);
     }
     to {
-      -webkit-transform: scale(0.15);
-              transform: scale(0.15);
+      -webkit-transform: scale(0.25);
+              transform: scale(0.25);
     }
   }
 
   @keyframes slidein {
     from {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+      -webkit-transform: scale(2);
+              transform: scale(2);
     }
     to {
-      -webkit-transform: scale(0.15);
-              transform: scale(0.15);
+      -webkit-transform: scale(0.25);
+              transform: scale(0.25);
     }
   }
 }

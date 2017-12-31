@@ -11,14 +11,15 @@ body {
   overflow: hidden;
   width: 100vw;
   margin: 0;
+  position: relative;
 }
 
 .svg {
   animation: var(--animation-duration) ease-in 0s slidein;
   animation-fill-mode: forwards;
   position: absolute;
-  height: 4000px;
-  width: 4000px;
+  height: 2000px;
+  width: 2000px;
   backface-visibility: hidden;
   perspective: 1000;
   transform: translate3d(0,0,0);
@@ -27,10 +28,10 @@ body {
 
 @keyframes slidein {
   from {
-    transform: scale(1);
+    transform: scale(2);
   }
   to {
-    transform: scale(0.13);
+    transform: scale(0.2);
   }
 }
 
@@ -138,10 +139,10 @@ body {
 
   @keyframes slidein {
     from {
-      transform: scale(1);
+      transform: scale(2);
     }
     to {
-      transform: scale(0.15);
+      transform: scale(0.25);
     }
   }
 }
