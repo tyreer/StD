@@ -17,8 +17,8 @@ body {
   animation: var(--animation-duration) ease-in 0s slidein;
   animation-fill-mode: forwards;
   position: absolute;
-  height: 500px;
-  width: 500px;
+  height: 4000px;
+  width: 4000px;
   backface-visibility: hidden;
   perspective: 1000;
   transform: translate3d(0,0,0);
@@ -26,16 +26,10 @@ body {
 
 @keyframes slidein {
   from {
-    transform: translate(250px, 250px)
-               scale(3)
-               translate(-250px, -250px)
-    /* transform: scale(3); */
+    transform: scale(1);
   }
   to {
-    transform: translate(500px, 500px)
-               scale(1)
-               translate(-500px, -500px)
-    /* transform: scale(1); */
+    transform: scale(0.13)
   }
 }
 
@@ -111,11 +105,6 @@ body {
     height: 100vh;
   }
 
-  .svg {
-    height: 4000px;
-    width: 4000px;
-  }
-
   .tree-outline {
     animation: dash 15s linear var(--animation-duration) infinite alternate;
   }
@@ -151,7 +140,7 @@ body {
       transform: scale(1);
     }
     to {
-      transform: scale(0.13);
+      transform: scale(0.15);
     }
   }
 }
