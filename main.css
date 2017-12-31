@@ -17,8 +17,8 @@ body {
   animation: var(--animation-duration) ease-in 0s slidein;
   animation-fill-mode: forwards;
   position: absolute;
-  height: 1000px;
-  width: 1000px;
+  height: 500px;
+  width: 500px;
   backface-visibility: hidden;
   perspective: 1000;
   transform: translate3d(0,0,0);
@@ -30,7 +30,7 @@ body {
     transform: scale(3);
   }
   to {
-    transform: scale(0.15);
+    transform: scale(1);
   }
 }
 
