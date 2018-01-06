@@ -1,0 +1,133 @@
+:root {
+  --animation-delay: 0.5s;
+}
+
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Great Vibes', cursive;
+  height: 80vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+  margin: 0;
+  background-color: #FFE0E4;
+}
+
+.overlay {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: 0.2s linear var(--animation-delay) textAni;
+          animation: 0.2s linear var(--animation-delay) textAni;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  padding: 30px 10px;
+  border: 1px solid white;
+  background: lightslategray;
+  color: white;
+  margin: auto;
+  -webkit-box-shadow: -7px 7px 25px -9px white;
+          box-shadow: -7px 7px 25px -9px white;
+}
+
+.overlay h2:first-of-type {
+  padding-top: 5px;
+}
+
+.overlay h1,
+.overlay h2 {
+  margin: 0 0 10px 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background: transparent;
+  padding: 3px 10px;
+}
+
+.overlay h1 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+  margin-bottom: 10px;
+}
+
+.overlay h2 {
+  font-size: 29px;
+}
+
+@media (min-width: 600px) {
+
+  body {
+    height: 100vh;
+  }
+
+  .overlay {
+    font-size: 73px;
+    -webkit-animation: 0.2s linear var(--animation-delay) textAni;
+            animation: 0.2s linear var(--animation-delay) textAni;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    padding: 60px;
+    position: fixed;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  @-webkit-keyframes textAni {
+    to {
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+      -webkit-box-shadow: -7px 7px 25px -9px white;
+              box-shadow: -7px 7px 25px -9px white;
+    }
+  }
+
+  @keyframes textAni {
+    to {
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+      -webkit-box-shadow: -7px 7px 25px -9px white;
+              box-shadow: -7px 7px 25px -9px white;
+    }
+  }
+
+
+  .overlay h1 {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .overlay h2:first-of-type {
+    padding-top: 0;
+  }
+
+  .overlay h1,
+  .overlay h2 {
+   padding: 0;
+  }
+
+  .overlay h2 {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=main-fallback.css.map */
