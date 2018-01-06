@@ -10,14 +10,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Great Vibes', cursive;
-  height: 80vh;
+  height: 90vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
   width: 100vw;
   margin: 0;
-  background-color: #FFE0E4;
+  /* background-color: #FFE0E4; */
+  background-color: #E2F1E3;
 }
 
 .overlay {
@@ -35,7 +35,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 35px;
+  font-size: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -43,12 +43,12 @@ body {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   padding: 30px 10px;
-  border: 1px solid white;
+  border: 5px solid white;
   background: lightslategray;
   color: white;
   margin: auto;
-  -webkit-box-shadow: -7px 7px 25px -9px white;
-          box-shadow: -7px 7px 25px -9px white;
+  -webkit-box-shadow: -7px 7px 25px -9px grey;
+          box-shadow: -7px 7px 25px -9px grey;
 }
 
 .overlay h2:first-of-type {
@@ -71,13 +71,14 @@ body {
 }
 
 .overlay h2 {
-  font-size: 29px;
+  font-size: 25px;
 }
 
 @media (min-width: 600px) {
 
   body {
     height: 100vh;
+    overflow: hidden;
   }
 
   .overlay {
@@ -96,8 +97,8 @@ body {
     to {
       -webkit-transform: rotate(-3deg);
               transform: rotate(-3deg);
-      -webkit-box-shadow: -7px 7px 25px -9px white;
-              box-shadow: -7px 7px 25px -9px white;
+      -webkit-box-shadow: -7px 7px 25px -9px grey;
+              box-shadow: -7px 7px 25px -9px grey;
     }
   }
 
@@ -105,8 +106,8 @@ body {
     to {
       -webkit-transform: rotate(-3deg);
               transform: rotate(-3deg);
-      -webkit-box-shadow: -7px 7px 25px -9px white;
-              box-shadow: -7px 7px 25px -9px white;
+      -webkit-box-shadow: -7px 7px 25px -9px grey;
+              box-shadow: -7px 7px 25px -9px grey;
     }
   }
 
