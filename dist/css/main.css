@@ -10,7 +10,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Julius Sans One', sans-serif;
-  height: 85vh;
+  height: 90vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
